@@ -6,7 +6,6 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: config-bus-server
       label: main
       name: clients
       profile: dev
