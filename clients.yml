@@ -1,1 +1,23 @@
-
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    config:
+      discovery:
+        enabled: true
+        service-id: config-bus-server
+      label: main
+      name: clients
+      profile: dev
+      fail-fast: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点
