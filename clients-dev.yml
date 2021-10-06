@@ -1,4 +1,4 @@
 server:
   port: 8889
 asdf: 1234
-test: 发生冲突后解决0
+test: 1
